@@ -1,0 +1,35 @@
+.college {
+  width: 97%;
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  overflow: hidden;
+  resize: none;
+  border: none;
+}
+
+.course {
+  width: 97%;
+  font-size: 16px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  overflow: hidden;
+  resize: none;
+  border: none;
+}
+.duraton-cgpa {
+  width: 97%;
+  font-size: 14px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  overflow: hidden;
+  resize: none;
+  border: none;
+}
+div {
+  margin-top: 5px;
+  margin-left: 2px;
+}

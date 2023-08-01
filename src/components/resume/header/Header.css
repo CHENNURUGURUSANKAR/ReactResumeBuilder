@@ -1,0 +1,30 @@
+/* Header.css */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for the title */
+.title {
+  width: 85%;
+  height: auto;
+  color: black;
+  border: none;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the subtitle */
+.subtitle {
+  margin-bottom: 5px;
+  text-align: center;
+  height: auto;
+  width: 90%;
+  border: none;
+  color: black;
+  font-size: 20px;
+}

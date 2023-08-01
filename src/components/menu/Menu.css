@@ -1,0 +1,45 @@
+.card {
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  padding: 10px;
+  width: 85%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  color: #333;
+  margin: 0;
+  margin-left: 50px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Add this new CSS for the container of the Resume component */
+.resume-container {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}

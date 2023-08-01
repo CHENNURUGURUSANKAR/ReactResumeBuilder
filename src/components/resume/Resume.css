@@ -1,0 +1,58 @@
+/* Resume.css */
+
+/* Main resume container */
+.main-resume-container {
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  max-width: 850px;
+  height: 900px; /* Set max-height for the container */
+  overflow: hidden; /* Add overflow to enable scrolling if content exceeds max-height */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Adjust the main container to be a column */
+}
+
+/* Header Container */
+.header-container {
+  /* Apply styling for the header component here */
+  /* For example: */
+  width: 100%;
+  height: auto;
+}
+
+/* Content Container (will contain Left and Right) */
+.content-container {
+  flex: 1; /* This will make the content container expand to fill the available space */
+  display: flex; /* Use flex layout for Left and Right to appear side by side */
+}
+
+/* Left Container */
+.left-container {
+  /* Apply styling for the left component here */
+  /* For example: */
+  flex: 0.4;
+  height: 100%;
+  text-align: left;
+}
+
+/* Right Container */
+.right-container {
+  /* Apply styling for the right component here */
+  /* For example: */
+  flex: 0.65;
+  background-color: lightgreen;
+}
+
+/* Customize the print layout for the resume */
+@media print {
+  .main-resume-container {
+    width: 850px;
+    height: 1200px;
+    page-break-inside: avoid;
+    margin: 0;
+  }
+  textarea {
+    resize: none;
+  }
+}
