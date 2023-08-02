@@ -34,8 +34,8 @@ const Education = () => {
       ))}
 
       {/* Add New Edition button */}
-      <div className="add-edition-container">
-        <button className="add-edition-btn" onClick={handleAddEdition}>
+      <div className="add-education-container">
+        <button className="add-education-btn" onClick={handleAddEdition}>
           +
         </button>
       </div>
