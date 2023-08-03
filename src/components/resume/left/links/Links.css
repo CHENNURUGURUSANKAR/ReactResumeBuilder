@@ -1,0 +1,3 @@
+.links:hover .delete-link {
+  display: block; /* Display the button only when hovering over the education container */
+}

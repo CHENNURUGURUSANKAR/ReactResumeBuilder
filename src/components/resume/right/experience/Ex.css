@@ -1,4 +1,4 @@
-.college {
+.comp {
   word-wrap: normal;
   word-break: break-all;
   width: 97%;
@@ -10,7 +10,7 @@
   border: none;
 }
 
-.course {
+.job {
   word-wrap: normal;
   word-break: break-all;
   width: 97%;
@@ -22,7 +22,7 @@
   resize: none;
   border: none;
 }
-.duraton-cgpa {
+.des {
   width: 97%;
   font-size: 14px;
   color: black;
@@ -33,7 +33,6 @@
   border: none;
 }
 div {
-  margin-top: 5px;
   margin-left: 2px;
 }
 

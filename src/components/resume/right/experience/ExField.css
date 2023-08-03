@@ -42,7 +42,7 @@ div {
   text-align: center;
 }
 
-.delete-btn {
+.delete-education-btn {
   /* Apply styling for the Add New Edition button */
   background-color: #ff0000;
   color: rgb(0, 0, 0);
@@ -54,6 +54,6 @@ div {
   display: none; /* Hide the button by default */
 }
 
-.edu-con:hover .delete-btn {
+.education-container:hover .delete-education-btn {
   display: block; /* Display the button only when hovering over the education container */
 }

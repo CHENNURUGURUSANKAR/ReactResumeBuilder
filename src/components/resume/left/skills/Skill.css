@@ -1,0 +1,18 @@
+.skill {
+  width: 97%;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  overflow: hidden;
+  resize: none;
+  border: none;
+  margin-left: 5px;
+  word-wrap: normal;
+  word-break: break-all;
+  row-gap: 5px;
+}
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

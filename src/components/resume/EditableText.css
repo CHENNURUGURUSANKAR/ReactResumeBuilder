@@ -1,8 +1,10 @@
-.add-education-container {
+.editable {
   text-align: center;
 }
 
-.add-education-btn {
+.add-btn,
+.add-link-btn {
+  text-align: right;
   /* Apply styling for the Add New Edition button */
   background-color: #28a745;
   color: white;
@@ -14,6 +16,10 @@
   display: none; /* Hide the button by default */
 }
 
-.education-container:hover .add-education-btn {
+.editable:hover .add-btn {
+  text-align: right;
+  display: block; /* Display the button only when hovering over the education container */
+}
+.editable:hover .add-link-btn {
   display: block; /* Display the button only when hovering over the education container */
 }

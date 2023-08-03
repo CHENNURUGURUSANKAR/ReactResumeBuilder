@@ -1,15 +1,11 @@
+import Experience from "./experience/Experience";
+import Projects from "./projects/Projects";
+import "./Right.css";
 const Right = () => {
   return (
-    <div>
-      <div>
-        {" "}
-        <h1>projects</h1>
-        <h1>projects</h1>
-        <h1>projects</h1>
-        <h1>projects</h1>
-        <h1>projects</h1>
-        <h1>projects</h1>
-      </div>
+    <div className="rh-con">
+      <Experience />
+      <Projects />
     </div>
   );
 };

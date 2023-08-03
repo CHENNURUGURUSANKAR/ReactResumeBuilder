@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Education.css";
-import Field from "./Field";
+import "./Ex.css";
+import ExField from "./ExField";
 
-const Education = () => {
+const Experience = () => {
   const [editions, setEditions] = useState([
     { College: "", Degree: "", Duration: "", CGPA: "" },
   ]);
@@ -23,11 +23,11 @@ const Education = () => {
   return (
     <div className="education-container">
       {/* Hoverable "Education" heading */}
-      <h1 className="education-heading">Education</h1>
+      <h1 className="education-heading">Experience</h1>
       <div style={{ display: "flex" }}>
         <div>
           {editions.map((edu, index) => (
-            <Field
+            <ExField
               key={index}
               data={edu}
               onDelete={() => handleDeleteEdition(index)}
@@ -43,4 +43,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

@@ -1,18 +1,20 @@
 import React from "react";
 import "./Field.css";
 import TextareaAutosize from "react-textarea-autosize";
+import ContentEditable from "react-contenteditable";
 import EditableText from "../../EditableText";
 
 const Field = ({ data, onDelete }) => {
   return (
-    <div>
-      <EditableText />
-      {/* <TextareaAutosize
+    <div className="edu-con">
+      <TextareaAutosize
+        value={"College"}
+        fontSize="20px"
+        fontColor="black"
         className="college"
-        placeholder="College"
-        defaultValue={data.College}
-        type="text"
-      /> */}
+        placeholder="Start typing here..."
+        style={{ fontFamily: "Arial, sans-serif" }}
+      />
       <TextareaAutosize
         type="text"
         className="course"
@@ -31,11 +33,9 @@ const Field = ({ data, onDelete }) => {
         placeholder="CGPA"
         defaultValue={data.CGPA}
       />
-      <div className="add-edition-container">
-        <button className="delete-education-btn" onClick={onDelete}>
-          X
-        </button>
-      </div>
+      <button className="delete-btn" onClick={onDelete}>
+        X
+      </button>
     </div>
   );
 };

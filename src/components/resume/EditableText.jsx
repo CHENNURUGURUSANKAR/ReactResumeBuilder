@@ -1,10 +1,8 @@
 import React, { useState, useRef } from "react";
-import ContentEditable from "react-contenteditable";
-import "./left/education/Field.css";
 import "./EditableText.css";
 
-const EditableText = () => {
-  const [text, setText] = useState("College");
+const EditableText = (props) => {
+  const [text, setText] = useState(props.value);
   const [selectedColor, setSelectedColor] = useState("black");
   const contentEditableRef = useRef(null);
 
@@ -43,43 +41,29 @@ const EditableText = () => {
           }
         }
 
-        setSelectedColor("black"); // Reset selected color to black after applying
-        selection.removeAllRanges(); // Clear the selection to avoid issues with consecutive color applications
+        //setSelectedColor("black"); // Reset selected color to black after applying
+        //selection.removeAllRanges(); // Clear the selection to avoid issues with consecutive color applications
       }
     }
   };
 
   return (
-    <div className="add-education-container ">
-      <div className="add-education-btn">
-        <button
-          onClick={() => handleColorChange("red")}
-          style={{ background: "red", color: "red" }}
-        >
-          .
-        </button>
-        <button
-          onClick={() => handleColorChange("blue")}
-          style={{ background: "blue", color: "blue" }}
-        >
-          .
-        </button>
-        <button
-          onClick={() => handleColorChange("green")}
-          style={{ background: "green", color: "green" }}
-        >
-          .
-        </button>
-        {/* Add more color options as needed */}
-      </div>
-      <ContentEditable
-        innerRef={contentEditableRef}
-        html={text}
-        tagName="div"
-        className="college"
-        placeholder="College"
-        onChange={handleInputChange}
-        onMouseUp={applyColorOrLink} // Use onMouseUp instead of onBlur
+    <div className="editable">
+      <button
+        className="add-link-btn"
+        onClick={() => handleColorChange("blue")}
+        style={{ background: "blue", color: "white", padding: "5px" }}
+      >
+        Add Link
+      </button>
+
+      <div
+        ref={contentEditableRef}
+        contentEditable
+        className={props.className}
+        onInput={handleInputChange}
+        onBlur={applyColorOrLink}
+        dangerouslySetInnerHTML={{ __html: text }}
       />
     </div>
   );
